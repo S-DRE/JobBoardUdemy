@@ -1,2 +1,2 @@
 # JobBoardUdemy
-Proyecto del curso de aprendizaje del framework para PHP, Symfony
+Proyecto del curso de Udemy del Framework Symfony para PHP
