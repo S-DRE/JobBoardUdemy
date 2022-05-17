@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+    {% block body %}
+        <table>
+            <thead>
+            <tr>
+                <th>
+                    Company
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    &nbsp;
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for offer in offers %}
+                <tr>
+                    <td>{{ offer.company }}</td>
+                    <td>{{ offer.title }}</td>
+                    <td><a href="{{ url("offer_apply", { id: offer.id }) }}">Apply</a></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% endblock %}
